@@ -1,4 +1,3 @@
-
 # Welcome to z3ven's official website!
 [Useful tips for Python to bypass iCloud and more](tips.md)
 # Who am I?
@@ -19,7 +18,9 @@ Me in social media
 [YouTube](https://youtube.com/@thez3ven/)
 
 [GitHub](https://github.com/z3ven)
-[Donate](tg://resolve?domain=z3nd0natebot)
+
+[Donate](https://t.me/z3nd0natebot)
 
 Copyright z3ven 2023
+
 
