@@ -13,13 +13,11 @@ iCloudBypasser - its a utility to bypass icloud.
 
 Me in social media
 --------
-[Telegram](https://t.me/z3venslab)
 
 [YouTube](https://youtube.com/@thez3ven/)
 
 [GitHub](https://github.com/z3ven)
 
-[Donate](https://t.me/z3nd0natebot)
 
 Copyright z3ven 2023
 
