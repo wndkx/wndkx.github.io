@@ -16,6 +16,7 @@ This command installs iproxy. iProxy using for bypassing and ssh into your devic
 3\. `brew install libirecovery`
 ---------------------------
 This command will install irecovery, needed for a lot of ramdisks
+
 4\. `irecovery -n`
 ---------------------------
 Your devivce stuck in recovery mode? This command will fix it!
