@@ -22,7 +22,6 @@ iCloudBypasser - it's a utility to bypass icloud.
 [Discord](https://discord.com/users/925458300416450560/)
 
 
-Copyright z3ven 2023
 </div>
 
 
