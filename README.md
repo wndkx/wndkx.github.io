@@ -1,11 +1,17 @@
 <div class="webpage" align="center">
-<h1>Welcome to z3ven's official website!</h1> 
-<a href="tips.md"><p>Useful tips for Python to bypass iCloud and more</p></a>
-<h1>Who am I?</h1>
-<p>I am a Python, objective c, Rust and Swift developer. I develop for myself. I opened my GitHub account in 2021-2022. My first repository was pythonlibautoinstaller. From that time I loved coding.</p>
   
+# Welcome to z3ven's official website!
+[Useful tips for Python to bypass iCloud and more](tips.md)
+  
+# Who am I?
+
+I am a Python, objective c, Rust and Swift developer. I develop for myself. I opened my GitHub account in 2021-2022. My first repository was pythonlibautoinstaller. From that time I loved coding.
+
+# My cool software
+
 # [RetroBrowsing](https://github.com/z3ven/RetroBrowsing)
-<p>This is a browser based on Python and can use web engines. So, it's using webview and has an HTML G.U.I</p>
+
+This is a browser based on Python and can use web engines. So, it's using webview and has an HTML G.U.I
 
 # [CordRPC](https://github.com/z3ven/CordRPC)
 CordRPC - is a utility to create a cool menu in your discord profile.
