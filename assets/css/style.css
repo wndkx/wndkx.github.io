@@ -1,0 +1,100 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', monospace;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+}
+h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+div.navbar {
+    text-align: center;
+  }
+  
+.navbar {
+background-color: #000000;
+display: flex; 
+justify-content: center;  
+padding: 10px;
+}
+
+.nav-list {
+    list-style: none;
+    display: inline-flex; 
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+a:link {
+    color: rgb(0, 140, 255);
+  }
+  
+
+  a:visited {
+    color: rgb(0, 140, 255);
+  }
+.warning {
+    background-color: red;
+}
+table.markdownTable td,
+table.markdownTable th {
+	border: 1px solid #c6cbd1;
+	padding: 0.5rem 1rem;
+}
+
+.markdownTable tbody tr:nth-of-type(odd) {
+	background-color: #f6f8fa;
+}
+
+table.markdownTable td,
+table.markdownTable th {
+	border: 2px solid #ffffff;
+	padding: 0.5rem 1rem;
+}
+
+.markdownTable tbody tr:nth-of-type(odd) {
+	background-color: #000000;
+}
+th.markdownTableHeadLeft,
+th.markdownTableHeadRight,
+th.markdownTableHeadCenter,
+th.markdownTableHeadNone {
+	background-color: #000000;
+	color: inherit;
+	font-size: inherit;
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	text-align: inherit;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom: 1px solid #c6cbd1;
+}

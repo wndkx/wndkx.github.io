@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z3ven 's guide</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <a href="index.html"><h1>z3ven</h1></a>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="https://discord.com/users/925458300416450560/"><img src="assets/images/discord_logo.png" width="32" height="24"></a></li>
+            <li><a href="https://youtube.com/@thez3ven/"><img src="assets/images/ytlogo.png" width="32" height="24"></a></li>
+            <li><a href="https://github.com/z3ven/"><img src="assets/images/github_logo.png" width="32" height="24"></a></li>
+            <li><a href="https://www.reddit.com/user/z3ven_Pwn"><img src="assets/images/reddit_logo.png" width="32" height="24"></a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Main library commands</h1>
+        <table class="markdownTable">
+            <tbody><tr class="markdownTableHead">
+            <th class="markdownTableHeadNone">Utility</th><th class="markdownTableHeadNone">Description</th></tr>
+            <tr class="markdownTableRowOdd">
+            <td class="markdownTableBodyNone"><code>idevice_id</code>  </td><td class="markdownTableBodyNone">List attached devices or print device name of given device   </td></tr>
+            <tr class="markdownTableRowEven">
+            <td class="markdownTableBodyNone"><code>idevicebackup</code>  </td><td class="markdownTableBodyNone">Create or restore backup for devices (legacy)   </td></tr>
+            <tr class="markdownTableRowOdd">
+            <td class="markdownTableBodyNone"><code>idevicebackup2</code>  </td><td class="markdownTableBodyNone">Create or restore backups for devices running iOS 4 or later   </td></tr>
+            <tr class="markdownTableRowEven">
+            <td class="markdownTableBodyNone"><code>idevicecrashreport</code>  </td><td class="markdownTableBodyNone">Retrieve crash reports from a device   </td></tr>
+            <tr class="markdownTableRowOdd">
+            <td class="markdownTableBodyNone"><code>idevicedate</code>  </td><td class="markdownTableBodyNone">Display the current date or set it on a device   </td></tr>
+            <tr class="markdownTableRowEven">
+            <td class="markdownTableBodyNone"><code>idevicedebug</code>  </td><td class="markdownTableBodyNone">Interact with the debugserver service of a device   </td></tr>
+            <tr class="markdownTableRowOdd">
+            <td class="markdownTableBodyNone"><code>idevicedebugserverproxy</code>  </td><td class="markdownTableBodyNone">Proxy a debugserver connection from a device for remote debugging   </td></tr>
+            <tr class="markdownTableRowEven">
+            <td class="markdownTableBodyNone"><code>idevicediagnostics</code>  </td><td class="markdownTableBodyNone">Interact with the diagnostics interface of a device   </td></tr>
+            <tr class="markdownTableRowOdd">
+            <td class="markdownTableBodyNone"><code>ideviceenterrecovery</code>  </td><td class="markdownTableBodyNone">Make a device enter recovery mode   </td></tr>
+            <tr class="markdownTableRowEven">
+            <td class="markdownTableBodyNone"><code>ideviceimagemounter</code>  </td><td class="markdownTableBodyNone">Mount disk images on the device   </td></tr>
+            <tr class="markdownTableRowOdd">
+            <td class="markdownTableBodyNone"><code>ideviceinfo</code>  </td><td class="markdownTableBodyNone">Show information about a connected device   </td></tr>
+            <tr class="markdownTableRowEven">
+            <td class="markdownTableBodyNone"><code>idevicename</code>  </td><td class="markdownTableBodyNone">Display or set the device name   </td></tr>
+            <tr class="markdownTableRowOdd">
+            <td class="markdownTableBodyNone"><code>idevicenotificationproxy</code>  </td><td class="markdownTableBodyNone">Post or observe notifications on a device   </td></tr>
+            <tr class="markdownTableRowEven">
+            <td class="markdownTableBodyNone"><code>idevicepair</code>  </td><td class="markdownTableBodyNone">Manage host pairings with devices and usbmuxd   </td></tr>
+            <tr class="markdownTableRowOdd">
+            <td class="markdownTableBodyNone"><code>ideviceprovision</code>  </td><td class="markdownTableBodyNone">Manage provisioning profiles on a device   </td></tr>
+            <tr class="markdownTableRowEven">
+            <td class="markdownTableBodyNone"><code>idevicescreenshot</code>  </td><td class="markdownTableBodyNone">Gets a screenshot from the connected device   </td></tr>
+            <tr class="markdownTableRowOdd">
+            <td class="markdownTableBodyNone"><code>idevicesetlocation</code>  </td><td class="markdownTableBodyNone">Simulate location on device   </td></tr>
+            <tr class="markdownTableRowEven">
+            <td class="markdownTableBodyNone"><code>idevicesyslog</code>  </td><td class="markdownTableBodyNone">Relay syslog of a connected device   </td></tr>
+            </tbody></table>
+            <h1>iRecovery commands.</h1>
+            <table class="markdownTable">
+                <tbody><tr class="markdownTableHead">
+                <th class="markdownTableHeadNone">Command</th><th class="markdownTableHeadNone">Description</th></tr>
+                <td class="markdownTableBodyNone"><code>irecovery -i ECID </code>  </td><td class="markdownTableBodyNone">connect to specific device by its ECID</td></tr>
+                <td class="markdownTableBodyNone"><code>irecovery -c COMMAND </code>  </td><td class="markdownTableBodyNone">execute iBSS command on the device</td></tr>
+                <td class="markdownTableBodyNone"><code>irecovery -m </code>  </td><td class="markdownTableBodyNone">print current device mode</td></tr>
+                <td class="markdownTableBodyNone"><code>irecovery -f FILE </code>  </td><td class="markdownTableBodyNone">send file to a device</td></tr>
+                <td class="markdownTableBodyNone"><code>irecovery -k FILE </code>  </td><td class="markdownTableBodyNone">send limera1n usb exploit payload from FILE</td></tr>
+                <td class="markdownTableBodyNone"><code>irecovery -r </code>  </td><td class="markdownTableBodyNone">reset client</td></tr>
+                <td class="markdownTableBodyNone"><code>irecovery -n </code>  </td><td class="markdownTableBodyNone">reboot device into normal mode (exit recovery loop)</td></tr>
+                <td class="markdownTableBodyNone"><code>irecovery -e FILE </code>  </td><td class="markdownTableBodyNone">executes recovery script from FILE</td></tr>
+                <td class="markdownTableBodyNone"><code>irecovery -s </code>  </td><td class="markdownTableBodyNone">start interactive shell</td></tr>
+                <td class="markdownTableBodyNone"><code>irecovery -q </code>  </td><td class="markdownTableBodyNone">query device info</td></tr>
+                <td class="markdownTableBodyNone"><code>irecovery -v </code>  </td><td class="markdownTableBodyNone">enable verbose output, repeat for higher verbosity</td></tr>
+            </table>
+            <p>You can follow guide updates <a href="https://github.com/z3ven/z3ven.github.io/commits"><p>here</p></a></p>
+    </main>
+    <p align="center">Copyright &copy; z3ven</p>
+</body>
+</html>
