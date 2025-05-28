@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wndkx</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body id="content">
+    <img src="../assets/images/logo.jpeg" class="avatar" height="200" width="50">
+    <a href="https://wndkx.github.io"><h1>wndkx</h1></a>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="https://discord.com/users/925458300416450560/"><img src="../assets/images/discord_logo.png" width="32" height="24"></a></li>
+            <li><a href="https://youtube.com/@wndkx123/"><img src="../assets/images/ytlogo.png" width="32" height="24"></a></li>
+            <li><a href="https://github.com/wndkx/"><img src="../assets/images/github_logo.png" width="32" height="24"></a></li>
+            <li><a href="../guides/index.html">Guides</a></li>
+            <li><a href="../donate.html">Donate</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 style="text-align: center">DiscordInfiniteTyper</h1>
+        <a align="center" href="https://github.com/wndkx/DiscordInfiniteTyper"><p align="center">Github</p></a>
+        <a align="center" href="https://github.com/wndkx/DiscordInfiniteTyper/archive/refs/heads/main.zip"><p align="center">Download</p></a>
+        Make your type infinite</p>
+        <h1 id="notice">Notice</h1>
+        <p>The author is not responsible for your Discord account. These operations are breaking Discord ToS. This programme is written only for educational purposes</p>
+        <h1 id="installation">Installation</h1>
+        <ul>
+        <li><p>Install git</p>
+        </li>
+        <li><p>Install <a href="https://python.org">python</a></p>
+        </li>
+        <li><p>Clone this repository via: <code>git clone https://github.com/z3ven/DiscordInfiniteTyper/</code></p>
+        </li>
+        <li><p>Type: <code>pip3 install requests</code></p>
+        </li>
+        </ul>
+        <h1 id="using">Using</h1>
+        <ul>
+        <li>Open the config.json file and change the settings<h2 id="changing-config">Changing config</h2>
+        </li>
+        <li>In <code>token</code> you must put your user token which you can get in five steps:</li>
+        <li>Open your browser</li>
+        <li>Go to <a href="https://discord.com/app">discord.com</a></li>
+        <li>Open the Developer menu, then the console</li>
+        <li>And type this: <pre><code class="lang-javascript">(
+            webpackChunkdiscord_app.push(
+                [
+                    [''],
+                    {},
+                    e =&gt; {
+                        m=[];
+                        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> <span class="hljs-built_in">c</span> <span class="hljs-keyword">in</span> e.<span class="hljs-built_in">c</span>)
+                            m.push(e.<span class="hljs-built_in">c</span>[<span class="hljs-built_in">c</span>])
+                    }
+                ]
+            ),
+            m
+        ).<span class="hljs-built_in">find</span>(
+            m =&gt; m?.exports?.<span class="hljs-keyword">default</span>?.getToken !== void <span class="hljs-number">0</span>
+        ).exports.<span class="hljs-keyword">default</span>.getToken()
+        </code></pre>
+        </li>
+        <li>In <code>channel_id</code> you must put the id of a channel where you want to make infinite typing status
+        To get the channel id enable developer mode in your discord settings and right-click on the channel or DM, then click <code>Copy channel ID</code>.</li>
+        <li>To enable debug mode set the <code>debug-mode</code> parameter to true. Debug mode prints useful information, if you want to contribute to the project.<h2 id="running">Running</h2>
+        </li>
+        <li>Now run <code>python main.py</code><h2 id="useful-info">Useful info</h2>
+        You will see useful information in a console if you enable debug mode.
+        If the request was successful you will see: <code>Received status code 204</code>
+        Error message:
+        <code>Error: ERROR_CODE RESPONSE_IN_JSON_FORMAT</code><h2 id="non-debug-mode">Non-debug mode</h2>
+        If you disabled debug mode, you will see only error messages. 
+        Error message: `An error occurred</li>
+        </ul>
+        <h1 id="contributing">Contributing</h1>
+        <p>Please observe the code style of the project and describe the commits.</p>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> wndkx</p>
+      </footer>
+      
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+</body>
+</html> 

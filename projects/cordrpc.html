@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wndkx</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body id="content">
+    <img src="../assets/images/logo.jpeg" class="avatar" height="200" width="50">
+    <a href="https://wndkx.github.io"><h1>wndkx</h1></a>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="https://discord.com/users/925458300416450560/"><img src="../assets/images/discord_logo.png" width="32" height="24"></a></li>
+            <li><a href="https://youtube.com/@wndkx123/"><img src="../assets/images/ytlogo.png" width="32" height="24"></a></li>
+            <li><a href="https://github.com/wndkx/"><img src="../assets/images/github_logo.png" width="32" height="24"></a></li>
+            <li><a href="../guides/index.html">Guides</a></li>
+            <li><a href="../donate.html">Donate</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 align="center">CordRPC</h1>
+        <a align="center" href="https://github.com/wndkx/CordRPC"><p align="center">Github</p></a>
+        <a align="center" href="https://github.com/wndkx/CordRPC/archive/refs/heads/main.zip"><p align="center">Download</p></a>
+        <p><p align="center">CordRPC - is a utility to create a cool menu in your discord profile.</p></p>
+        <p><p align="center"><a href="https://github.com/wndkx/CordRPC/LICENSE">License</a></p>
+        <h1 id="setup">Setup</h1>
+        <ul>
+        <li>Download the CordRPC files</li>
+        <li>Use <code>pip3 install -r requirements.txt</code> to install the requirements<h2 id="editing-config-file">Editing config file</h2>
+        Open the config.json file and set all the params</li>
+        </ul>
+        <p>Default config:</p>
+        <pre><code class="lang-json">{
+            <span class="hljs-attr">"client_id"</span>: <span class="hljs-string">"YOUR_CLIENT_ID_HERE"</span>,
+            <span class="hljs-attr">"large_image"</span>: <span class="hljs-string">"YOUR_LARGE_IMAGE"</span>,
+            <span class="hljs-attr">"large_text"</span>: <span class="hljs-string">"YOUR_LARGE_TEXT"</span>,
+            <span class="hljs-attr">"details"</span>: <span class="hljs-string">"YOUR_DETAILS"</span>,
+            <span class="hljs-attr">"state"</span>: <span class="hljs-string">"STATE"</span>,
+            <span class="hljs-attr">"update_time"</span>: <span class="hljs-number">60</span>,
+            <span class="hljs-attr">"buttons"</span>: [
+                {
+                    <span class="hljs-attr">"label"</span>:<span class="hljs-string">"BUTTON_LABEL"</span>,
+                    <span class="hljs-attr">"url"</span>: <span class="hljs-string">"URL"</span>
+                },
+                {
+                    <span class="hljs-attr">"label"</span>:<span class="hljs-string">"BUTTON_LABEL"</span>,
+                    <span class="hljs-attr">"url"</span>: <span class="hljs-string">"URL"</span>
+                }
+            ]
+        }
+        </code></pre>
+        <ul>
+        <li><code>client_id</code> - You can find the client id in <a href="https://discord.com/developers/applications">Discord Developer Portal</a>/Your application/Oauth2/General</li>
+        <li><code>large_image</code> - This image will be displayed at Activity menu in your profile. You can edit it at <a href="https://discord.com/developers/applications">Discord Developer Portal</a>/Your application/Rich Presence/ Art assets. NOTE! On some clients the image won&#39;t seem</li>
+        <li><code>large_text</code> - This parameter is a text that will be displayed when you point at the image</li>
+        <li><code>update_time</code> - Time after menu will disappear</li>
+        <li>Other params you can see here</li>
+        </ul>
+        <p>Code:</p>
+        <pre><code class="lang-json">{
+            <span class="hljs-attr">"client_id"</span>: <span class="hljs-string">"1094627712070582333"</span>,
+            <span class="hljs-attr">"large_image"</span>: <span class="hljs-string">"bb6"</span>,
+            <span class="hljs-attr">"large_text"</span>: <span class="hljs-string">"large text"</span>,
+            <span class="hljs-attr">"details"</span>: <span class="hljs-string">"Details"</span>,
+            <span class="hljs-attr">"state"</span>: <span class="hljs-string">"State"</span>,
+            <span class="hljs-attr">"update_time"</span>: <span class="hljs-number">60</span>,
+            <span class="hljs-attr">"buttons"</span>: [
+                {
+                    <span class="hljs-attr">"label"</span>:<span class="hljs-string">"Link 1"</span>,
+                    <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://youtube.com"</span>
+                },
+                {
+                    <span class="hljs-attr">"label"</span>:<span class="hljs-string">"Link 2"</span>,
+                    <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://github.com"</span>
+                }
+            ]
+        }
+        </code></pre>
+        <p>And the menu:</p>
+        <p><img src="https://github.com/wndkx/CordRPC/testpic.png" alt="Menu"></p>
+        <p>NOTE! The bold text is a name of your bot. Please remember it. </p>        
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> wndkx</p>
+      </footer>
+      
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+</body>
+</html> 

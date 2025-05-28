@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wndkx</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body id="content">
+    <img src="../assets/images/logo.jpeg" class="avatar" height="200" width="50">
+    <a href="https://wndkx.github.io"><h1>wndkx</h1></a>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="https://discord.com/users/925458300416450560/"><img src="../assets/images/discord_logo.png" width="32" height="24"></a></li>
+            <li><a href="https://youtube.com/@wndkx123/"><img src="../assets/images/ytlogo.png" width="32" height="24"></a></li>
+            <li><a href="https://github.com/wndkx/"><img src="../assets/images/github_logo.png" width="32" height="24"></a></li>
+            <li><a href="index.html">Guides</a></li>
+            <li><a href="../donate.html">Donate</a></li>
+        </ul>
+    </nav>  
+    <h1>Deploying Python apps for free on Pylex or PythonAnywhere</h1>
+    <p>Deploying your Python applications online doesn’t have to cost money. There are free platforms available that make it easy to publish web apps built with frameworks like Flask or FastAPI. In this guide, we’ll walk you through deploying Python apps using <a href="https://pylex.dev" target="_blank">PyLex</a> and <a href="https://www.pythonanywhere.com" target="_blank">PythonAnywhere</a>.</p>
+
+    <h2>Before You Begin</h2>
+
+    <p>Make sure you have the following:</p>
+    <ul>
+        <li>A working Python app (for example, using Flask or FastAPI).</li>
+        <li>A <code>requirements.txt</code> file listing your dependencies.</li>
+        <li>If using GitHub, a repository with your code uploaded.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Option 1: Deploy Using PyLex</h2>
+
+    <p><a href="https://pylex.dev" target="_blank">PyLex</a> is a modern platform that allows you to deploy Python apps straight from GitHub. It supports auto-deployment, handles dependencies, and provides a free public URL.</p>
+
+    <h3>Step-by-Step Guide:</h3>
+    <ol>
+        <li>
+            <strong>Create an Account:</strong>
+            <p>Go to <a href="https://pylex.dev" target="_blank">https://pylex.dev</a> and sign up using your GitHub account.</p>
+        </li>
+        <li>
+            <strong>Prepare Your App:</strong>
+            <p>Ensure your repository contains the following:</p>
+            <ul>
+                <li><code>app.py</code> or <code>main.py</code> as the entry point.</li>
+                <li><code>requirements.txt</code> listing all needed packages.</li>
+                <li>For Flask: export the app as a global variable (e.g. <code>app = Flask(__name__)</code>).</li>
+                <li>Optional: A <code>Procfile</code> to define how the app is run (example: <code>web: uvicorn app:app --host=0.0.0.0 --port=8000</code> for FastAPI).</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Create a New Project:</strong>
+            <p>Click on “New Project” in the PyLex dashboard. Choose your GitHub repo and specify the runtime (e.g., Python 3.10).</p>
+        </li>
+        <li>
+            <strong>Deploy:</strong>
+            <p>PyLex will automatically install the dependencies and run your app. You will receive a public URL once the build is complete.</p>
+        </li>
+        <li>
+            <strong>Update Automatically:</strong>
+            <p>Any changes you push to GitHub will be automatically deployed.</p>
+        </li>
+    </ol>
+
+    <h4>Example Flask App:</h4>
+    <pre>
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Hello from PyLex!"
+    </pre>
+
+    <hr>
+
+    <h2>Option 2: Deploy Using PythonAnywhere</h2>
+
+    <p><a href="https://www.pythonanywhere.com" target="_blank">PythonAnywhere</a> is an online IDE and hosting service that supports Python web apps. It’s ideal for small apps and educational projects.</p>
+
+    <h3>Step-by-Step Guide:</h3>
+    <ol>
+        <li>
+            <strong>Sign Up:</strong>
+            <p>Register for a free account at <a href="https://www.pythonanywhere.com" target="_blank">pythonanywhere.com</a>.</p>
+        </li>
+        <li>
+            <strong>Upload Your App:</strong>
+            <p>You can upload your files via the web interface or clone your GitHub repo using the Bash console:</p>
+            <pre>git clone https://github.com/your-username/your-repo.git</pre>
+        </li>
+        <li>
+            <strong>Install Dependencies:</strong>
+            <p>Open the Bash console and install packages with pip:</p>
+            <pre>pip install --user -r requirements.txt</pre>
+        </li>
+        <li>
+            <strong>Set Up the Web App:</strong>
+            <p>Go to the “Web” tab and click “Add a new web app.” Choose:</p>
+            <ul>
+                <li>Manual configuration</li>
+                <li>Python version matching your app</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Configure WSGI:</strong>
+            <p>Open the WSGI config file (linked in the web app settings) and point it to your app. Example for Flask:</p>
+            <pre>
+import sys
+path = '/home/yourusername/yourproject'
+if path not in sys.path:
+    sys.path.insert(0, path)
+
+from app import app as application
+            </pre>
+        </li>
+        <li>
+            <strong>Reload the App:</strong>
+            <p>Click “Reload” in the Web tab to start the app. Your public link will look like <code>yourusername.pythonanywhere.com</code>.</p>
+        </li>
+    </ol>
+
+    <h4>Example Flask App:</h4>
+    <pre>
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Hello from PythonAnywhere!"
+    </pre>
+
+    <hr>
+    <footer>
+        <p>&copy; <span id="year"></span> wndkx</p>
+      </footer>
+      
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+
+</body>
+</html>
